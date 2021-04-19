@@ -2,6 +2,17 @@
 #include <vector>
 #include <algorithm>
  
+ /**
+ * A function that returns the most recent object values for an unordered map
+ * to a matching character
+ *
+ * @param data Unordered map of pair of string and integer.
+ * @param c First character in the objects value to look for a match
+ * @return if there is an object starting with letter c:
+ * 			return string value of the most recent object starting with letter c 
+ *		otherwise:
+ *			return empty string
+ */
 std::string mostRecentLetter(std::unordered_map<std::string, int64_t> data, char c)
 {
   std::string retval;
