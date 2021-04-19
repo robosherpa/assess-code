@@ -25,3 +25,15 @@ target_link_libraries(
    pthread
    )
 
+# Link executables
+add_executable(
+	build/mRO_test
+	tests/mRO_test.cpp
+   )
+
+target_link_libraries(
+	build/mRO_test
+   ${GTEST_LIBRARIES}
+   pthread
+   )
+
